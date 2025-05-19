@@ -13,10 +13,11 @@ function resetBackgroundColor() {
 }
 
 // Capture Keyboard Input
-
+const keyPress = document.querySelector("#keyPressDisplay")
 // Function to display the key pressed by the user
 function displayKeyPress(event) {
   // Implement the function to display key pressed
+  keyPress.textContent = event.key
 }
 
 // Process Text Input
