@@ -21,10 +21,11 @@ function displayKeyPress(event) {
 }
 
 // Process Text Input
-
+const userInput = document.querySelector("#textInputDisplay")
 // Function to display user input in real-time
-function displayUserInput() {
+function displayUserInput(event) {
   // Implement the function to display user input
+  userInput.textContent = event.target.value
 }
 
 // Attach Event Listeners
