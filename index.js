@@ -9,6 +9,7 @@ function changeBackgroundColor() {
 // Function to reset the background color when the body is double-clicked
 function resetBackgroundColor() {
   // Implement the function to reset background color
+  body.style.backgroundColor = "white"
 }
 
 // Capture Keyboard Input
