@@ -45,3 +45,8 @@ document.addEventListener('keydown', displayKeyPress)
 
 // Attach event listener to display user input in real-time as they type
 document.getElementById('textInput').addEventListener('input', displayUserInput)
+
+module.exports = {
+  displayKeyPress,
+  displayUserInput
+}

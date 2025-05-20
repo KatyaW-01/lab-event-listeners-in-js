@@ -1,6 +1,7 @@
 const { document, dom } = require('./helpers')
 const { expect } = require('chai')
 
+const { displayKeyPress, displayUserInput } = require('../index.js') 
 // Sample test suite for JavaScript event handling
 describe('Handling Events with JavaScript', () => {
   let changeColorButton
@@ -15,6 +16,9 @@ describe('Handling Events with JavaScript', () => {
     textInput = document.getElementById('textInput')
     keyPressDisplay = document.getElementById('keyPressDisplay')
     textInputDisplay = document.getElementById('textInputDisplay')
+
+    document.addEventListener('keydown', displayKeyPress)
+    textInput.addEventListener('input', displayUserInput)
   })
 
   it('should select the changeColorButton element', () => {
